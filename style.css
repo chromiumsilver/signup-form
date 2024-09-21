@@ -1,0 +1,113 @@
+:root {
+  --button-color: #596d48;
+  --hover-color: rgb(203, 223, 203);
+  --border-color: rgb(196, 185, 185);
+  --focus-color: rgb(50, 50, 232);
+  --error-color: rgb(209, 22, 22);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+.content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.picture {
+  background-image: url(./images/unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+.logo {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+.desp {
+  height: 30vh;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-title {
+  grid-column: 1 / -1;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+input {
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+
+input:focus {
+  border: 2px solid var(--focus-color);
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid var(--error-color);
+}
+
+.btn {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  color: var(--button-color);
+}
+
+.login-link {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: var(--hover-color);
+}
